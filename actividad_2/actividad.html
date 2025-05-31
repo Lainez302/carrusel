@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCO EL SOL</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+    <img src="logo circo.avif" alt="Logo del circo" width="150" class="company_logo" />
+      <h1 class="main__title">CIRCO EL SOL</h1>
+    <nav class="header__nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">eventos</a>
+      <a href="#reserva">Reserva tu entrada</a>
+      <a href="#contacto">Contactanos</a>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="inicio" class="main__hero">
+      <p class="main__description">Mantén el circo en marcha dentro de ti, sigue así, no te tomes nada demasiado en serio, al final todo saldrá bien.</p>
+      <a href="#reserva" class="btn-reserva">Reserva aqui tu entrada</a>
+    </section>
+   
+    <section id="cronograma" class="cronograma">
+        <h2 class="cronograma_title">cronograma diario</h2>
+        <div class="cronograma__grid">
+          
+            <article class="cronograma-card">
+            <img src="acrobacia en soga.jpg" alt="acrobacia en soga" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">acrobacia en soga</h3>
+            <p class="cronograma-card__description">La acrobacia aérea en cuerda es mucho más que una técnica: es un arte que combina fuerza, gracia y emoción suspendida en el aire.</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="cuerda floja.jpg" alt="cuerda floja" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">cuerda floja</h3>
+            <p class="cronograma-card__description">La cuerda floja ha sido un elemento central en el circo durante siglos, despertando la admiración del público por la habilidad y el coraje de los acróbatas.</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="payasos.jpg" alt="payasos acrobaticos" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">payasos acrobaticos</h3>
+            <p class="cronograma-card__description">Un payaso acrobático en el circo es un artista que combina la comedia con la acrobacia. Estos artistas suelen realizar trucos acrobáticos, como saltos mortales, volteretas y equilibrios, mientras mantienen una actitud divertida y humorística.</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="acrobacia con animales.jpeg" alt="acrobacia con animales" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">acrobacias con animales exoticos</h3>
+            <p class="cronograma-card__description">Los actos con animales exóticos en circo son aquellos en los que se utilizan animales salvajes o exóticos para realizar espectáculos o números de entretenimiento, como trucos de doma, exhibiciones o simplemente para ser presentados al público.</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="hombre bala.jpg" alt="hombre bala" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">hombre bala</h3>
+            <p class="cronograma-card__description">El "hombre bala" en un circo es una persona que es lanzada desde un cañón especialmente diseñado para ello, como si fuera una bala.</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="lobo de la muerte.jpg" alt="lobo de la muerte" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">lobo de la muerte</h3>
+            <p class="cronograma-card__description">El "lobo de la muerte" en un circo o carnaval se refiere a una atracción acrobática en la que un piloto de motocicletas realiza acrobacias dentro de una esfera metálica, también conocida como "Globo de la Muerte".El "lobo de la muerte" en un circo o carnaval se refiere a una atracción acrobática en la que un piloto de motocicletas realiza acrobacias dentro de una esfera metálica, también conocida como "Globo de la Muerte".</p>
+          </article>
+
+          <article class="cronograma-card">
+            <img src="VENTRILOQUIA.jpg" alt="ventriloquia" class="cronograma-card__image" />
+            <h3 class="cronograma-card__name">ventriloquia</h3>
+            <p class="cronograma-card__description">La ventriloquía en el circo es un arte escénico en el que un ventrílocuo habla de tal manera que parece que su voz proviene de un títere o maniquí, en lugar de su propia boca.</p>
+          </article>
+
+
+          <section id="reserva">
+            <h2>Reservacion de tus entradas para el circo</h2>
+            <form action="#" method="post">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" required />
+      
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}" placeholder="Ej: 3001234567" />
+      
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required />
+      
+              <label for="hora">Hora</label>
+              <input type="time" id="hora" name="hora" required />
+      
+              <label for="personas">Cuantas  Personas van a ingresar</label>
+              <select id="personas" name="personas" required>
+                <option value="" disabled selected>Selecciona</option>
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5+">5 o más</option>
+              </select>
+      
+              <button type="submit">Enviar respuesta de reserva</button>
+            </form>
+          </section>
+
+          <footer class="footer" id="contacto">
+            <p> direccion: CRA 53 # 30 A- 155 Av. Guayabal</p>
+            <p> Teléfono: (604) 5550925-3146859852</p>
+            <p> Horarios: Lun-Dom 12pm - 10pm</p>
+            <p>
+              🌐 Síguenos:
+              <a href="https://www.facebook.com/circomedellin/?locale=es_LA">Facebook</a> | <a href="https://www.instagram.com/circomedellin/?hl=es">Instagram</a>
+            </p>
+          </footer>
+
+            <a
+            href="https://wa.me/573043545228?text=Hola%20quiero%20hacer%20una%20reserva"
+            target="_blank"
+            class="whatsapp-btn"
+            aria-label="Contactar por WhatsApp"
+            >&#x1F4AD;</a>
+  
+</body>
+</html>
